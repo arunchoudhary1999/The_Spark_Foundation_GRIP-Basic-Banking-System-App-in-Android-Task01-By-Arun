@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#0B0C0C"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <Button
+        android:id="@+id/view_users"
+        android:layout_width="216dp"
+        android:layout_height="57dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="5dp"
+        android:shadowColor="#1B7A77"
+        android:text="@string/view_users"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

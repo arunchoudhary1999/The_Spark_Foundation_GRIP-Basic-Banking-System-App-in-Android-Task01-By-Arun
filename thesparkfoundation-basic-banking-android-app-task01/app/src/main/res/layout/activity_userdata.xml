@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cycle_add"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="80dp"
+            android:padding="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/users"
+                app:srcCompat="@drawable/users" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cycle_add"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="82dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Name :"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_below="@id/user_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Mobile Number :"
+                android:layout_marginRight="20dp"></TextView>
+            <TextView
+                android:id="@+id/userphonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_below="@id/mobile_no">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Email Id :"
+                android:layout_marginRight="20dp"></TextView>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_account_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_below="@id/email_id">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Account No :"
+                android:layout_marginRight="20dp"></TextView>
+            <TextView
+                android:id="@+id/account_no"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ifsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_below="@id/bank_account_no">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="IFSC Code"
+                android:layout_marginRight="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/ifsc_code"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
+            android:layout_below="@id/ifsc">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Current balance :"
+                android:layout_marginRight="20dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs."
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"></TextView>
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"></TextView>
+                <TextView
+                    android:id="@+id/rupeeslash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" /-"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/current_balance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_button"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="Transfer money"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"></Button>
+
+        <ImageView
+            android:id="@+id/tick"
+            android:layout_width="151dp"
+            android:layout_height="31dp"
+            android:layout_above="@+id/transfer_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="247dp"
+            android:layout_marginRight="247dp"
+            android:layout_marginBottom="430dp"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+    </RelativeLayout>
+</ScrollView>

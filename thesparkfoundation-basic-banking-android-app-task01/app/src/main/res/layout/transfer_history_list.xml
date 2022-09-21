@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"></TextView>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:contentDescription="@string/todo"></ImageView>
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"></TextView>
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"></TextView>
+            <TextView
+                android:id="@+id/rupeeslash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" /-"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/transaction_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Amount"
+            android:text="@string/transaction_status"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"></TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

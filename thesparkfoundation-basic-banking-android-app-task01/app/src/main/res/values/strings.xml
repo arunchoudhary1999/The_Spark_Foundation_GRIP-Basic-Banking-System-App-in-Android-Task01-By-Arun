@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Banking App</string>
+    <string name="search">Search</string>
+    <string name="view_users">View Users</string>
+    <string name="select_a_user_to_transfer_money">Select a user to transfer money</string>
+
+    <string name="no_history">No history</string>
+    <string name="transaction_status">Transaction status</string>
+    <string name="rs">Rs.</string>
+    <string name="name2">name2</string>
+    <string name="amount">amount</string>
+    <string name="date">date</string>
+    <string name="name1">name1</string>
+
+    <string name="phone_numebr">Phone numebr</string>
+
+    <string name="balance">balance</string>
+    <string name="todo">TODO</string>
+    <string name="created_by">Created by </string>
+    <string name="banking_system">BANKING APP</string>
+    <string name="Naresh_Apat"> Naresh Apat </string>
+
+
+</resources>
